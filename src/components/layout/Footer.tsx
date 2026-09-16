@@ -1,3 +1,5 @@
+import { assetUrl } from "../../lib/assetUrl";
+
 export function Footer() {
   return (
     <footer
@@ -11,7 +13,7 @@ export function Footer() {
         aria-label="Site da FATEC Carapicuíba"
       >
         <img
-          src="/img/logoFatec.png"
+          src={assetUrl("/img/logoFatec.png")}
           alt="Logo da FATEC Carapicuíba"
           className="h-20 w-auto max-w-[180px] object-contain"
         />
@@ -24,7 +26,7 @@ export function Footer() {
         aria-label="Site do Centro Paula Souza"
       >
         <img
-          src="/img/logoCPS.png"
+          src={assetUrl("/img/logoCPS.png")}
           alt="Logo do Centro Paula Souza"
           className="h-20 w-auto max-w-[180px] object-contain"
         />
@@ -37,7 +39,7 @@ export function Footer() {
         aria-label="Página do curso de Análise e Desenvolvimento de Sistemas"
       >
         <img
-          src="/img/adslogo.png"
+          src={assetUrl("/img/adslogo.png")}
           alt="Logo do curso de Análise e Desenvolvimento de Sistemas"
           className="h-20 w-auto max-w-[180px] object-contain"
         />

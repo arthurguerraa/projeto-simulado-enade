@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ThemeToggleButton } from "./ThemeToggleButton";
+import { assetUrl } from "../../lib/assetUrl";
 
 const LINKS = [
   { to: "/", label: "Início" },
@@ -19,7 +20,7 @@ export function SiteNav() {
     >
       <Link to="/" className="flex items-center">
         <img
-          src="/img/newSimucadLogoCrop.jpeg"
+          src={assetUrl("/img/newSimucadLogoCrop.jpeg")}
           alt="Simucad"
           className="h-12 w-auto object-contain"
         />
