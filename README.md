@@ -82,11 +82,6 @@ sistema de arquivos de origem (Windows) não diferencie.
 - **Questão 02**: as alternativas C e D vieram idênticas no arquivo legado
   (`js/gaba.js`). A opção correta é "C"; o texto real da alternativa D precisa ser
   conferido contra o PDF oficial do gabarito do INEP.
-- **Links de PDF oficial** (prova e gabarito) na Home apontam para a página geral
-  de provas/gabaritos do INEP — trocar pelos links diretos do ENADE 2021 de
-  Ciência da Computação quando disponíveis.
-- **Créditos**: lista de integrantes em `pages/Creditos.tsx` está com placeholders
-  — substituir pelos nomes reais do grupo.
 
 ## Correções aplicadas na refatoração
 
