@@ -1,4 +1,4 @@
-import { isAnulada, estatisticaIndisponivel, type Questao, type LetraAlternativa } from "../../types/questao";
+import { isAnulada, type Questao, type LetraAlternativa } from "../../types/questao";
 import type { RespostaRegistrada } from "../../types/simulado";
 import { SeletorAlternativas } from "./SeletorAlternativas";
 

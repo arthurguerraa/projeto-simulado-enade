@@ -46,9 +46,9 @@ if (!estado.finalizado) {
   const resultado = calcularResultado(questoes, estado.respostas);
 
   const duracaoMs =
-    estado.tempoTotalSegundos !== null
-      ? estado.tempoTotalSegundos * 1000
-      : calcularTempoGastoMs(estado.inicioTimestampMs);
+  estado.tempoTotalSegundos !== null
+    ? estado.tempoTotalSegundos * 1000
+    : calcularTempoGastoMs(estado.inicioTimestampMs ?? Date.now());
   const duracaoFormatada = formatarDuracao(duracaoMs);
 
   function aoRefazer() {
