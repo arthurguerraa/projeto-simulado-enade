@@ -30,7 +30,6 @@ da Profa. MSc. Rita Felix.
 - **React Router** — navegação entre as 7 telas.
 - **localStorage** — toda a persistência de progresso e preferências, sem backend.
 
-## Estrutura do projeto
 
 ## Estrutura do projeto
 
