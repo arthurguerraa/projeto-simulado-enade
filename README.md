@@ -32,27 +32,31 @@ da Profa. MSc. Rita Felix.
 
 ## Estrutura do projeto
 
+## Estrutura do projeto
+
+```
 src/
-├── types/ # Contratos do domínio: Questao, EstadoSimulado, etc.
-├── data/ # questions.ts — as 35 questões, migradas do legado gaba.js
-├── domain/ # Regras de negócio puras (sem UI), testáveis isoladamente:
-│ # scoring.ts — cálculo de pontuação e acerto/erro
-│ # tempo.ts — formatação de duração e contagem regressiva
-│ # storage.ts — leitura/escrita segura no localStorage
-│ # gabarito.ts — status por questão (correto/incorreto/anulada/em branco)
-├── hooks/ # Ligam domínio à UI:
-│ # useCountdown.ts — cronômetro genérico
-│ # useTimerSimulado.ts — cronômetro aplicado à prova (persistência + ajuste manual)
-│ # useSimulado.ts — estado de respostas, correção e finalização
-│ # useFocusTrap.ts — reforço de foco retido em modais
-├── context/ # ThemeContext — tema claro/escuro global
+├── types/        # Contratos do domínio: Questao, EstadoSimulado, etc.
+├── data/         # questions.ts — as 35 questões, migradas do legado gaba.js
+├── domain/       # Regras de negócio puras (sem UI), testáveis isoladamente:
+│                 #   scoring.ts   — cálculo de pontuação e acerto/erro
+│                 #   tempo.ts     — formatação de duração e contagem regressiva
+│                 #   storage.ts   — leitura/escrita segura no localStorage
+│                 #   gabarito.ts  — status por questão (correto/incorreto/anulada/em branco)
+├── hooks/        # Ligam domínio à UI:
+│                 #   useCountdown.ts     — cronômetro genérico
+│                 #   useTimerSimulado.ts — cronômetro aplicado à prova (persistência + ajuste manual)
+│                 #   useSimulado.ts      — estado de respostas, correção e finalização
+│                 #   useFocusTrap.ts     — reforço de foco retido em modais
+├── context/      # ThemeContext — tema claro/escuro global
 ├── components/
-│ ├── layout/ # SiteNav, Footer, Header (do simulado), TimerDisplay, TimerControls
-│ ├── question/ # CardQuestao, SeletorAlternativas, BarraNavegacaoQuestoes
-│ ├── modals/ # Modal (base com <dialog> nativo), ModalEstatisticas
-│ ├── results/ # ResumoAproveitamento, CardMetrica, TabelaEstatisticasCompletas
-│ └── gabarito/ # BadgeStatus
-└── pages/ # As 7 telas: Home, Tutorial, Sobre, Creditos, Simulado, Resultado, Gabarito
+│   ├── layout/     # SiteNav, Footer, Header (do simulado), TimerDisplay, TimerControls
+│   ├── question/   # CardQuestao, SeletorAlternativas, BarraNavegacaoQuestoes
+│   ├── modals/      # Modal (base com <dialog> nativo), ModalEstatisticas
+│   ├── results/    # ResumoAproveitamento, CardMetrica, TabelaEstatisticasCompletas
+│   └── gabarito/   # BadgeStatus
+└── pages/        # As 7 telas: Home, Tutorial, Sobre, Creditos, Simulado, Resultado, Gabarito
+```
 
 
 ## Rodando localmente
